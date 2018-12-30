@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="meteor.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link rel="icon" href="./help/ghost.png">
+  <title>GHOST SHOOTER | HALLOWEEN GAME</title>
+</head>
+
+<body>
+  <section id="main">
+
+    <div id="mainMenu">
+
+      <div class="menuArea bounce-in-top">
+
+        <div class="modals scale-in-hor-center text-center">
+          <h2 class="text-center">Ghost Shooter - The Game</h2>
+          <p>The goal of the game is to get as many points as possible. You have 3 life points. The game ends when you
+            lose all points of life. The Ghost and the Spectre are the main enemies. The enemies move from right to
+            left and from left to right. The Ghost and the Spectre throws bombs. These are the Pumpkin-mask and the
+            Spirit. If one of these bombings hit you, you lose a life. Shoot the Ghost, and you get 50 points. The
+            Spectre is tricky, if you shoot, you lose 60 points. Why? Just. :) </p>
+          <h2 class="text-center">Special thanks to:</h2>
+          <p><a href="http://www.dl-sounds.com" target="_blank">DL SOUNDS</a> for the game
+            main menu's music's</p>
+            <p><a href="http://www.bensound.com/royalty-free-music" target="_blank">Bensound</a> for the game main and score table's music's</p>
+          <p><a href="https://game-icons.net" target="_blank">Game-icons.net </a>for the fantastic icons</p>
+          <p><a href="https://howlerjs.com" target="_blank">Howler.js </a>for the fantastic javascript sound library.
+            THX!</p>
+
+          <button class="exit">Exit</button>
+        </div>
+
+        <div class="flicker-in-1">
+          <h1>GHOST SHOOTER</h1>
+        </div>
+        <div class="buttons">
+          <button class="mainAgain">Start Game</button>
+          <button class="help">Help</button>
+        </div>
+        <hr>
+        <div class="section sct_1">
+          <h2>GAME CONTROLS</h2>
+          <p><b>LEFT</b> ARROW: Move left, <b>RIGHT</b> ARROW: Move right, <b>SPACE</b>: Fire, <b>P</b> KEY: Pause</p>
+          <hr>
+        </div>
+        <div class="section sct_2">
+          <h2>ENEMIES / BOMBS</h2>
+          <div class="icons"><img class="pulsate-bck" src="./help/ghost.svg" alt="metroid">
+            <p>Ghost. <b>+50</b> extra points.</p>
+          </div>
+          <div class="icons"><img class="pulsate-bck" src="./help/spectre.svg" alt="beholder">
+            <p>Spectre. <b>-60</b> points.</p>
+          </div>
+          <div class="icons"><img src="./help/pumpkin-mask.svg" alt="falling-bombs"> <img src="./help/spark-spirit.svg"
+              alt="falling-bombs">
+            <p>Pumpkin & Spirit. <b>+1</b> point if miss you.</p>
+          </div>
+        </div>
+        <hr>
+        <div class="thanks">
+          <p><b>&#60; BETA VERSION &#62;</b></p>
+          <p>I'm a beginner coder, and its'a training project. I was wondering if I could do a simple game in
+            javascript. Maybe
+            I did. Enjoy!</p>
+          <p>email: <a href="mailto:tmsmajoros@gmail.com">tmsmajoros@gmail.com</a> | My site: <a href="https://smartbeeweb.hu/profilpage/index.html"
+              target="_blank">Maja</a></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="endGameMessage fade-in">
+      <h1>GAME OVER!</h1>
+      <h2>YOUR SCORE</h2>
+      <h3 class="score"> 0</h3>
+      <div class="">
+        <button class="again">New Game</button>
+        <button class="main_menu">Main Menu</button>
+      </div>
+      <div id="ranks">
+        <div class="baby">
+          <h3>Your Rank: Baby<img src="./ranks/baby-face.svg" alt="baby face"></h3>
+        </div>
+        <div class="disintegrate">
+          <h3>Your Rank: Disintegrator<img src="./ranks/disintegrate.svg" alt="disintegrate"></h3>
+        </div>
+        <div class="minotaur">
+          <h3>Your Rank: Minotaur<img src="./ranks/minotaur.svg" alt="minotaur"></h3>
+        </div>
+        <div class="goose">
+          <h3>Your (chatastrofic) Rank: Goose<img src="./ranks/goose.svg" alt="goose"></h3>
+        </div>
+      </div>
+    </div>
+
+    <section id="universe">
+      <div>
+        <h2 class="pressSpace">3</h2>
+      </div>
+      <div class="sc">
+        <h2>Score: <span id="score">0</span></h2>
+      </div>
+
+      <div class="lf">
+        <h2>Life: <span id="life">0</span></h2>
+      </div>
+
+      <div id="paddle"><img src="./monsters/thwomp1.png" alt=""></div>
+      <div id="bullet"><img src="./monsters/skull-sabertooth.svg" alt=""></div>
+      <div id="enemy_1" class="pulsate-bck"><img src="./monsters/ghost.svg" alt=""></div>
+      <div id="enemy_2" class="pulsate-bck"><img src="./monsters/spectre.svg" alt=""></div>
+      <div id="bomb_1"><img src="./monsters/pumpkin-lantern.svg" alt=""></div>
+      <div id="bomb_2"><img src="./monsters/spark-spirit.svg" alt=""></div>
+    </section>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.14/howler.core.min.js"></script>
+  <script src="meteor.js"></script>
+</body>
+
+</html>
